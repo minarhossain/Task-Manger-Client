@@ -1,12 +1,11 @@
 import React from 'react';
-import MasterLayout from '../components/MasterLayout/MasterLayout';
+
 
 const LoginPage = () => {
     return (
         <div>
-            <MasterLayout>
-                <h2>Login</h2>
-            </MasterLayout>
+
+            <h2>Login page is not master layout</h2>
 
         </div>
     );
