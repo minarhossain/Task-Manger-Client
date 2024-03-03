@@ -12,6 +12,7 @@ import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 import Page404 from './pages/Page404';
 import ForgetPasswordPage from './pages/ForgetPasswordPage';
+import FullScreenLoader from './components/MasterLayout/FullScreenLoader';
 
 
 
@@ -39,10 +40,7 @@ function App() {
           <Route path='*' element={<Page404 />} />
         </Routes>
       </BrowserRouter>
-
-
-
-
+      <FullScreenLoader />
     </>
   )
 }
