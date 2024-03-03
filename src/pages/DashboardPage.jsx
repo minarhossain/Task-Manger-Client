@@ -9,7 +9,7 @@ const DashboardPage = () => {
 
             <MasterLayout >
                 <Suspense fallback={LazyLoader}>
-                    <h2>Dashboard</h2>
+
                     <Dashboard />
                 </Suspense>
 

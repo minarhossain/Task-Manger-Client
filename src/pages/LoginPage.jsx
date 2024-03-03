@@ -7,7 +7,7 @@ const LoginPage = () => {
         <div>
             <Suspense fallback={<LazyLoader />}>
 
-                <h2>Login page is not master layout</h2>
+
                 <Login />
             </Suspense>
 

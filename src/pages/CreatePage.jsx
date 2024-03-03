@@ -10,7 +10,7 @@ const CreatePage = () => {
             <MasterLayout>
                 <Suspense fallback={<LazyLoader />}>
 
-                    <h2>Create Page</h2>
+
                     <Create />
                 </Suspense>
             </MasterLayout>
