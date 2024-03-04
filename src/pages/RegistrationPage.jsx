@@ -6,8 +6,6 @@ const RegistrationPage = () => {
     return (
         <div>
             <Suspense fallback={<LazyLoader />}>
-
-                <h2>Registration</h2>
                 <Registration />
             </Suspense>
 

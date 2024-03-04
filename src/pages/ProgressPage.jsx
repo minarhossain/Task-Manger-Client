@@ -9,8 +9,6 @@ const ProgressPage = () => {
 
             <MasterLayout>
                 <Suspense fallback={<LazyLoader />}>
-
-                    <h2>Progress </h2>
                     <Progress />
                 </Suspense>
             </MasterLayout>

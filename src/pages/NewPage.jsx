@@ -7,8 +7,6 @@ const NewPage = () => {
         <div>
             <MasterLayout>
                 <Suspense fallback={<LazyLoader />}>
-
-                    <h2>New Task Page</h2>
                     <New />
                 </Suspense>
 

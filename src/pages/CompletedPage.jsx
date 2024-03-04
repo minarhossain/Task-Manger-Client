@@ -8,7 +8,7 @@ const CompletedPage = () => {
             <MasterLayout>
                 <Suspense fallback={<LazyLoader />}>
 
-                    <h2>Completed </h2>
+
                     <Completed />
                 </Suspense>
             </MasterLayout>

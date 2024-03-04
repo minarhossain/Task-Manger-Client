@@ -8,8 +8,6 @@ const CanceledPage = () => {
         <div>
             <MasterLayout>
                 <Suspense fallback={<LazyLoader />}>
-
-                    <h2>Cancelled</h2>
                     <Canceled />
                 </Suspense>
             </MasterLayout>
