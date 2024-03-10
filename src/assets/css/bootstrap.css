@@ -283,8 +283,8 @@ samp {
     font-family: var(--bs-font-monospace);
     font-size: 1em;
     direction: ltr
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     unicode-bidi: bidi-override;
 }
 
@@ -5888,8 +5888,8 @@ fieldset:disabled .btn {
     padding-right: 0.5rem;
     color: #6c757d;
     content: var(--bs-breadcrumb-divider, "/")
-    /* rtl: var(--bs-breadcrumb-divider, "/") */
-;
+        /* rtl: var(--bs-breadcrumb-divider, "/") */
+    ;
 }
 
 .breadcrumb-item.active {
@@ -7143,8 +7143,8 @@ fieldset:disabled .btn {
     position: absolute;
     top: 0;
     left: 0
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     z-index: 1060;
     display: block;
     max-width: 276px;
@@ -7522,8 +7522,8 @@ fieldset:disabled .btn {
 @keyframes spinner-border {
     to {
         transform: rotate(360deg)
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 

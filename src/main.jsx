@@ -11,10 +11,15 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Provider } from 'react-redux';
+import store from './redux/store/store.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    <ToastContainer />
+    <Provider store={store}>
+
+      <App />
+      <ToastContainer />
+    </Provider>
   </React.StrictMode>,
 )

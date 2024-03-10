@@ -1,8 +1,13 @@
 import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { errorToast, isEmail, isEmpty, isMobile, successToast } from "../../helper/FormHelper";
+import { registrationRequest } from "../../APIRequest/APIRequest";
 
 const Registration = () => {
     let emailRef, firstNameRef, lastNameRef, mobileRef, passwordRef = useRef();
+
+    const navigate = useNavigate()
+
     const onRegister = () => {
         let email = emailRef.value;
         let firstName = firstNameRef.value;
@@ -10,7 +15,25 @@ const Registration = () => {
         let mobile = mobileRef.value;
         let password = passwordRef.value;
 
-        console.log(email, firstName, lastName, mobile, password);
+
+        if (isEmail(email)) {
+            errorToast('Valid Email Address is Required');
+        } else if (isEmpty(firstName)) {
+            errorToast('First Name is Required');
+        } else if (isEmpty(lastName)) {
+            errorToast('Last Name is Required');
+        } else if (!isMobile(mobile)) {
+            errorToast('Mobile Number is Required');
+        } else if (isEmpty(password)) {
+            errorToast('Password is Required');
+        } else {
+            registrationRequest(email, firstName, lastName, mobile, password).then(result => {
+                if (result === true) {
+                    navigate('/login')
+                }
+            })
+
+        }
     }
 
 
